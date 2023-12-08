@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    transition: 0.3s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoListContainer {
+    height: 500px;
+    width: 380px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 8px 8px 12px #303030;
+    padding: 10px;
+}
+
+.todoListContainer .heading {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.todoListContainer .listContainer {
+    padding: 0px 5px;
+}
+
+.todoListContainer .listContainer .listInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 10px;
+}
+
+.todoListContainer .listContainer .listInput input[type=text] {
+    width: 75%;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 0px;
+    border: 0.5px solid black
+}
+
+.todoListContainer .listContainer .listInput .btn {
+    height: 38px;
+    width: 25%;
+    border: 0.5px solid black;
+    border-radius: 0px;
+    background-color: navajowhite;
+}
+
+.todoListContainer .listContainer .listInput .btn:hover {
+    background-color: rgb(255, 212, 147);
+}
+
+.lists {
+    /* background-color: greenyellow; */
+    overflow: hidden;
+}
+
+.lists li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 6px;
+}
+
+.lists li .delete {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+
+    height: 100%;
+    width: auto;
+    padding: 3px;
+}
+
+.lists li .delete:hover {
+    background-color: black;
+    color: white;
+}
+
+@media(max-width:390px) {
+    .todoListContainer {
+        width: 290px;
+    }
+}
